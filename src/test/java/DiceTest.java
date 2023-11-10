@@ -11,5 +11,17 @@ public class DiceTest {
 
         Assert.assertNotNull(dice);
     }
+    @Test
+    public void testTossAndSum(){
+        int numberOfDice = 2;
+        int max = numberOfDice *6;
+        Dice dice = new Dice(numberOfDice);
+
+        Integer actual = dice.tossAndSum();
+
+        Assert.assertTrue(actual <= max);
+        Assert.assertTrue(actual >= numberOfDice);
+    }
+
 
 }
