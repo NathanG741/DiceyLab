@@ -9,7 +9,7 @@ public class DiceTest {
         int numberOfDice = 2;
         Dice dice = new Dice(numberOfDice);
 
-        Assert.assertNull(dice);
+        Assert.assertNotNull(dice);
     }
 
 }
