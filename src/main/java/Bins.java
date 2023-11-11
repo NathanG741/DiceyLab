@@ -21,9 +21,16 @@ public class Bins {
         return this.possibleValues[binNumber - this.min];
 
     }
-    public void incrementBin(int binNumver) {
-        this.possibleValues[binNumver - this.min]++;
+    public void incrementBin(int binNumber) {
+        this.possibleValues[binNumber - this.min]++;
 
     }
 
+    public int[] getPossibleValues() {
+        return possibleValues;
+    }
+
+    public int getMin() {
+        return min;
+    }
 }
